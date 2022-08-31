@@ -93,7 +93,7 @@ Callback for frame rendering
 @param views Array of `viewCount` @ref WebXRView "webxr views"
 @param viewCount Size of `views`
 */
-typedef void (*webxr_frame_callback_func)(void* userData, int time, WebXRRigidTransform* headPose, WebXRView views[2], int viewCount);
+typedef void (*webxr_frame_callback_func)(void* userData, int framebuffer_id, int time, WebXRRigidTransform* headPose, WebXRView views[2], int viewCount);
 
 /**
 Callback for VR session start
